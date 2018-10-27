@@ -50,6 +50,9 @@ $toolbar-ios-button-color: color($colors, laranja);
 //cor icones superior
 $toolbar-md-button-color: color($colors, laranja);
 
+//cor fundo
+$background-color:  color($colors, snow);
+
 
 @import "ionic.theme.default";
 @import "ionic.ionicons";
