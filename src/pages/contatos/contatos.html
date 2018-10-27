@@ -1,0 +1,42 @@
+<ion-header>
+  <meta name="viewport" content="width=device-width">
+  <!--deixar respositivo -->
+  <ion-navbar>
+    <ion-title>contatos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+
+    <img src="img/advance-card-map-madison.png">
+    <ion-fab right top>
+      <button ion-fab>
+        <ion-icon name="contact"></ion-icon>
+      </button>
+    </ion-fab>
+
+    <ion-item>
+      <ion-icon name="football" item-start large></ion-icon>
+      <h2>Telefones:</h2>
+      <p>+55 (51)99314-3779</p>
+      <p>+55 (51)3333-3333</p>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="wine" item-start large></ion-icon>
+      <h2>Endereço:</h2>
+      <p>Rodovia Joana Trak, número 256.<br />Canoas, Rio Grande do Sul-RS</p>
+      <p>CEP:28296-321</p>
+    </ion-item>
+
+    <ion-item>
+      <span item-start>18 min</span>
+      <span item-start>(2.6 mi)</span>
+      <button ion-button icon-start clear item-end (click)="openMap()">
+        <ion-icon name="navigate"></ion-icon>
+        <div>Start </div>
+      </button>
+    </ion-item>
+  </ion-card>
+</ion-content>

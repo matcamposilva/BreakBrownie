@@ -1,0 +1,7 @@
+{
+  "name": "appBreakBrownie",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

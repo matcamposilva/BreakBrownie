@@ -1,0 +1,49 @@
+<ion-menu [content]="conteudoMenu">
+    <button ion-button icon-only menuToggle color="laranja">
+        <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-content>
+        <ion-list>
+            <div>
+                <ion-title>
+                    <p class="menuColor position-TitleMenu bold"> Menu</p>
+                </ion-title>
+            </div>
+            <button ion-item (click)="abrirCardapio(Cardapio)" menu-close>
+                <ion-icon name="md-bookmarks"color="laranja"> Cardapio</ion-icon>
+            </button>
+
+            <button ion-item (click)="abrirEncomendas(encomendas)" menu-close>
+                <ion-icon name="ios-car" color="laranja"> Encomendas</ion-icon>
+            </button>
+            
+
+            <button ion-item (click)="abrirMinhaConta(MinhaContaPage)" menu-close>
+                <ion-icon name="md-contacts" color="laranja"> Minha Conta</ion-icon>
+            </button>
+
+            <button ion-item (click)="abrirCarrinhoCompra(CarrinhoCompra)" menu-close>
+                <ion-icon name="ios-basket" color="laranja"> Carrinho de Compras</ion-icon>
+            </button>
+
+            <button ion-item (click)="abrirHistPedido(HistPedido)" menu-close>
+                <ion-icon name="ios-phone-portrait" color="laranja"> Historico de Pedido</ion-icon>
+            </button>
+
+            <button ion-item (click)="abrirSobre(Sobre)" menu-close>
+                <ion-icon name="md-cafe"color="laranja"> Sobre</ion-icon>
+            </button>
+
+            <button ion-item (click)="abrirContatos(Contatos)" menu-close>
+                <ion-icon name="md-call" color="laranja"> Contatos</ion-icon>
+            </button>
+
+            <button ion-item (click)="abrirRedeSocial(RedeSocial)" menu-close>
+                <ion-icon name="md-share" color="laranja"> Compartilhe!</ion-icon>
+            </button>
+
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage" #conteudoMenu></ion-nav>

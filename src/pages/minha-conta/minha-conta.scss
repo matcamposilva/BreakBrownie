@@ -1,0 +1,64 @@
+page-minha-conta{
+    .bg-login {
+        width: 100%;
+        height: 100%;
+          background:linear-gradient(to top, rgb(242, 145, 0)); 
+    }
+    .bg-register {
+        width: 100%;
+        height: 100%;
+        background:linear-gradient(to top, rgb(242, 145, 0));
+        background-size: cover;
+        background-position: center; 
+    }
+    
+    .logo-white-login {
+        width: 30%;
+        padding-top: 10%;
+    }
+    .bg-transparent {
+        background: transparent;
+        color: snow;
+
+    }
+
+    .ctaLogin {
+        padding: 10px;
+        background: snow;
+        border-radius: 100px;
+        
+
+    }
+    .ctaLoginFacebook {
+        padding: 10px;
+        background: snow;
+        border-radius: 100px;
+    }
+    .logoFacebook{
+        padding-top: -20%;
+        margin-left: -35%;
+    }
+    .txtFacebook{
+        padding-top: 10px;
+        margin-top: -60px;
+        background: snow;
+        border-radius: 100px;
+
+    }
+  
+    .ctaRegister {
+        padding: 10px;
+        background: snow;
+        border-radius: 100px;
+        color: snow
+    }
+    .txtRegistrar {
+        color: snow;
+    }
+    .txtEsqueceuSenha{
+        color: snow;
+        padding: 10px;
+        padding-left: 45%;
+        text-align:left;
+    }
+}

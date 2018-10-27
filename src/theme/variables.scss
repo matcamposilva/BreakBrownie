@@ -1,0 +1,57 @@
+$font-path: "../assets/fonts";
+$app-direction: ltr;
+
+@import "ionic.globals";
+// CORES DO APLICATIVO(VARIAVEIS)
+$colors: (primary: #488aff,
+secondary: #32db64,
+danger: #f53d3d,
+light: #f4f4f4,
+snow: #FAFAFA,
+dark: #8c8c8c,
+laranjaClaro: #F5AB3D,
+laranja: #F29100,
+
+);
+
+//Cor das Letras
+$text-color: snow;
+$button-ios-text-color: snow;
+$button-md-text-color:snow;
+
+//cor do texto ios e android <p>
+$card-ios-text-color: snow;
+$card-md-text-color: snow;
+
+$button-ios-small-icon-font-size: 65px;
+
+// Tamnho do texto buttom ios e android
+$button-ios-font-size: 12px;
+$button-md-font-size: 12px;
+
+//cor menu mais pedidos, produtos, encomenda ANDROID e IOS
+$button-md-background-color: color($colors, laranjaClaro);
+$button-ios-background-color: color($colors, laranjaClaro);
+//:color($colors, danger);      :#f53d3d;
+
+//cor menu superior android 
+$toolbar-md-background: color($colors, snow);
+
+// cor quando passa no menuTabs quando clica
+$tabs-tab-color-active: color($colors, laranja);
+
+//cor icones menuTabs  ios
+$tabs-tab-color-inactive: color($colors, laranjaClaro);
+// cor icones menuTabs android
+$tabs-md-tab-color-inactive: color($colors, laranjaClaro);
+
+//cor icones ios menu superior quando clica
+$toolbar-ios-button-color: color($colors, laranja);
+//cor icones superior
+$toolbar-md-button-color: color($colors, laranja);
+
+
+@import "ionic.theme.default";
+@import "ionic.ionicons";
+@import "roboto";
+@import "noto-sans";

@@ -1,0 +1,25 @@
+<ion-header>
+  <meta name="viewport" content="width=device-width">
+  <!--deixar respositivo -->
+  <ion-toolbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"> Pedido </ion-icon>
+    </button>
+    <ion-buttons start>
+      <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+      <ion-list>
+        <ion-item *ngFor="let item of items">
+          {{ item }}
+        </ion-item>
+      </ion-list>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal">
+        <ion-icon name="md-cart"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+</ion-content>

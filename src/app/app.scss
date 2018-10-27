@@ -1,0 +1,264 @@
+//Import font
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700');
+//Global
+
+@media (max-width: 320px) {
+
+  /* adicionar aqui os novos estilos para mobile */
+
+}
+
+.bg-login {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgb(242, 145, 0));
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+//Color
+.corPrincipal {
+  color: #F29100;
+}
+
+.corSecundaria {
+  color: #F5AB3D;
+}
+
+.snow {
+  color: #FFFF;
+
+}
+
+
+
+
+
+.menuColor {
+  font-size: 18px;
+  color: #F29100;
+
+}
+
+
+
+.menuColor {
+  font-size: 18px;
+  color: #F29100;
+
+}
+
+.laranja {
+  background-color: #F5AB3D;
+}
+
+//Align
+
+.position-TitleMenu {
+  margin-top: 35px;
+  color: #F29100;
+  text-align: center;
+
+
+}
+
+.center {
+  text-align: center
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+//Margin
+.no-margin {
+  margin: 0px
+}
+
+.mg-top-5 {
+  margin-top: 5px;
+}
+
+.mg-top-10 {
+  margin-top: 10px;
+}
+
+.mg-top-20 {
+  margin-top: 20px;
+}
+
+.mg-top-15 {
+  margin-top: 15px;
+}
+
+.mg-top-30 {
+  margin-top: 30px;
+}
+
+.mg-top-40 {
+  margin-top: 40px;
+}
+
+
+//Padding
+.no-padding {
+  padding: 0px
+}
+
+.padding-5 {
+  padding: 15px
+}
+
+.padding-25 {
+  padding: 25px
+}
+
+.padding-15 {
+  padding: 5px
+}
+
+.padding-left-10-percent {
+  padding-left: 10%
+}
+
+.padding-top-20-percent {
+  padding-top: 20
+}
+
+.padding-top-20 {
+  padding-top: 30px
+}
+
+.padding-rigth-30 {
+  padding-left: 220px
+}
+
+
+//Font style
+.bold {
+  font-weight: 700
+}
+
+.light {
+  font-weight: 300
+}
+
+// menu footer
+.logoMenu {
+  margin-top: 0px;
+  padding-top: 15px;
+  padding-left: 10px;
+  max-width: 200px;
+  max-height: 150px;
+
+}
+
+.setamenu {
+  margin-top: -30px;
+  padding-top: -195px;
+  padding-left: 35px;
+  max-width: 250px;
+  max-height: 150px;
+}
+
+.textoMenu {
+  margin-top: -55px;
+  padding-top: -180px;
+  text-align: left;
+  font-weight: 300;
+  margin-left: 105px;
+}
+
+
+.setamenu {
+  margin-top: -30px;
+  padding-top: -195px;
+  padding-left: 35px;
+  max-width: 250px;
+  max-height: 150px;
+}
+
+.textoMenu {
+  margin-top: -55px;
+  padding-top: -180px;
+  text-align: left;
+  font-weight: 300;
+  margin-left: 105px;
+}
+
+.GrupoInfoCadastro {
+  font-size: 12px;
+  color: snow;
+  font-weight: 700;
+  margin-top: 0px;
+  padding: 15px;
+}
+
+.radioButtonRight {
+  background: transparent;
+  margin: 0px;
+  padding: 5px;
+
+  padding-right: 30px;
+  padding-right: 30px;
+
+}
+
+.radioButtonLeft {
+  background: transparent;
+  margin: 0px;
+  padding: 5px;
+  padding-left: 0px;
+  padding-left: 0px;
+}
+
+
+.FormsexoMasc {
+  background: transparent;
+  color: snow;
+  padding-right: 205px;
+}
+
+.FormsexoFem {
+  background: transparent;
+  color: snow;
+  padding-left: 205px;
+  margin-top: -45px;
+}
+
+.radionPrivacidade {
+  background: transparent;
+  color: snow;
+  margin-top: 0px;
+  font-weight: 500;
+
+}
+
+.cidade {
+  color: snow;
+  padding-right: 235px;
+}
+
+.UF {
+  color: snow;
+  padding-left: 235px;
+  margin-top: -70px;
+}
+
+.posição-card{
+  margin-top: -115px;
+  margin-left: 255px;
+}
+
+.position-letra{
+  padding-top: -35px;
+  margin-top: 60px;
+  color: #F29100;
+
+}

@@ -1,0 +1,189 @@
+<ion-header>
+    <meta name="viewport" content="width=device-width">
+    <!--deixar respositivo -->
+</ion-header>
+<ion-content>
+    <!-- LOGIN -->
+    <div>
+      <!-- OVERLAY -->
+      <div class="overlay">
+        <!-- LOGIN CONTAINER -->
+        <div class="bg-login" *ngIf="login" [@login]>
+          <!-- LOGO -->
+          <div class="center padding-top-20-percent">
+            <img src="./assets/imgs/logo.png" class="logo-white-login">
+          </div>
+  
+          <!-- TEXTOS -->
+          <div class="mg-top-5">
+            <!-- TÍTULO -->
+            <h5 class="snow center bold no-margin">
+              LOGIN
+            </h5>
+            <p class="snow center bold no-margin mg-top-10">
+              Que bom te ver aqui !
+            </p>
+            <!-- SUBTÍTULO -->
+            <p class="snow center light no-margin mg-top-5">
+              Entre com sua conta para continuar
+            </p>
+          </div>
+                  
+          <!-- FORMS E CTA -->
+          <div class="padding-15">
+            <ion-item class="bg-transparent no padding mg-top-5">
+              <ion-label stacked class="snow bold">E-mail</ion-label>
+              <ion-input type="email" class="snow" [(ngModel)]="loginForm.email"></ion-input>
+            </ion-item>
+  
+            <div class="padding-15">
+              <ion-item class="bg-transparent no padding mg-top-5">
+                <ion-label stacked class="snow bold">Senha</ion-label>
+              <ion-input type="password" class="snow" [(ngModel)]="loginForm.password"></ion-input>>
+              </ion-item>
+  
+              <!-- NOVA CONTA -->
+              <div class="txtEsqueceuSenha snow light">
+                <p>Eesqueci minha Senha</p>
+              </div>
+              <!-- botões -->
+              <div class="ctaLogin center bold mg-top-5" (click)="fazerLogin()">
+                ENTRAR
+              </div>
+              <div class="ctaLoginFacebook center bold mg-top-10">
+                <img src="./assets/imgs/facebook.png" class="logoFacebook"/> <p class = "txtFacebook"> Facebook </p>
+              </div>
+              <!-- NOVA CONTA -->
+              <div class="txtRegistrar light mg-top-20 center" (click)="exibirRegistrar()">
+                QUERO CRIAR UMA NOVA CONTA
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- REGISTRO -->
+        <div class="overlay" class="bg-register" *ngIf="register" [@registro]>
+          <!-- OVERLAY -->
+          <div>
+            <!-- REGISTRO CONTAINER -->
+            <div>
+              <!-- LOGO -->
+  
+              <div class="logoMenu"> <img src="./assets/imgs/logo.png" class="logo-white-login" /> </div>
+              <div class="textoMenu">
+                <p class="snow bold"> CRIAR CONTA </p>
+              </div>
+              <div class="setamenu" (click)="exibirLogin()"> <img src="./assets/imgs/setaVoltar.png" class="logo-white-login setamenu" />
+              </div>
+              <!-- TEXTOS -->
+              <div class="mg-top-20">
+                <!-- TÍTULO -->
+                <h5 class="snow center bold no-margin">
+                  OPA! VAMOS CRIAR SUA CONTA . . .
+                </h5>
+                <p class="snow center light no-margin mg-top-15">
+                  Preencha os campos abaixo, para acessar nosso app :P
+                </p>
+              </div>
+  
+              <!-- FORMS E CTA -->
+              <div class="GrupoInfoCadastro bold">
+                Informações da conta
+                <div class="padding-15">
+                  <ion-item class="bg-transparent no-padding bold">
+                    <ion-label stacked class="snow bold">E-mail</ion-label>
+                    <ion-input type="email" class="snow" [(ngModel)]="registerForm.email"></ion-input>
+                  </ion-item>
+                  <ion-item class="bg-transparent no-padding bold">
+                    <ion-label stacked class="snow bold">Senha</ion-label>
+                    <ion-input type="password" class="snow" [(ngModel)]="registerForm.password"></ion-input>
+                  </ion-item>
+                </div>
+              </div>
+  
+              <div class="GrupoInfoCadastro ">
+                Dados Pessoais
+              </div>
+              <div class="padding-15">
+                <ion-item class="bg-transparent  no-margin">
+                  <ion-label stacked class="snow bold">Nome</ion-label>
+                  <ion-input type="text" class="snow" [(ngModel)]="registerForm.nome"></ion-input>
+                </ion-item>
+                <ion-item class="bg-transparent  no-margin">
+                  <ion-label stacked class="snow bold">Sobrenome</ion-label>
+                  <ion-input type="text" class="snow " [(ngModel)]="registerForm.sobrenome"></ion-input>
+                </ion-item>
+                <ion-item class="bg-transparent  no-margin">
+                  <ion-label stacked class="snow bold">CPF</ion-label>
+                  <ion-input type="text" class="snow" [(ngModel)]="registerForm.cpf"></ion-input>
+                </ion-item>
+                <ion-item class="bg-transparent  no-margin">
+                  <ion-label stacked class="snow bold">Data Nascimento</ion-label>
+                  <ion-input type="text" class="snow" [(ngModel)]="registerForm.data_nascimento"></ion-input>
+                </ion-item>
+                <ion-item class="bg-transparent  no-margin">
+                  <ion-label stacked class="snow bold">Telefone para contato</ion-label>
+                  <ion-input type="text" class="snow" [(ngModel)]="registerForm.telefone"></ion-input>
+                </ion-item>
+                <p class="snow light no-padding">Sexo</p>
+                <ion-item class="FormsexoMasc">
+                  <ion-label>Masculino</ion-label>
+                  <ion-radio value="Masculino" class="snow"></ion-radio>
+                </ion-item>
+                <ion-item class="FormsexoFem">
+                  <ion-label>Feminino</ion-label>
+                  <ion-radio value="Feminino"></ion-radio>
+                </ion-item>
+              </div>
+              <div class="GrupoInfoCadastro ">
+                Endereço
+              </div>
+              <div class="padding-15">
+                <ion-item class="bg-transparent  no-margin snow">
+                  <ion-label stacked class="snow bold">CEP</ion-label>
+                  <ion-input type="text" class="snow" [(ngModel)]="registerForm.cep"></ion-input>
+                </ion-item>
+                <ion-item class="bg-transparent  no-margin ">
+                  <ion-label stacked class="snow bold">Endereço</ion-label>
+                  <ion-input type="text" class="snow" [(ngModel)]="registerForm.endereco"></ion-input>
+                </ion-item>
+                <ion-item class="bg-transparent  no-margin">
+                  <ion-label stacked class="snow bold">Numero</ion-label>
+                  <ion-input type="text" class="snow" [(ngModel)]="registerForm.numero"></ion-input>
+                </ion-item>
+                <ion-item class="bg-transparent  no-margin">
+                  <ion-label stacked class="snow bold">Complemento(opcional)</ion-label>
+                  <ion-input type="text" class="snow" [(ngModel)]="registerForm.complemento"></ion-input>
+                </ion-item>
+                <ion-item class="bg-transparent  no-margin">
+                  <ion-label stacked class="snow bold">Bairro</ion-label>
+                  <ion-input type="text" class="snow" [(ngModel)]="registerForm.bairro"></ion-input>
+                </ion-item>
+                <ion-item class="bg-transparent  no-margin cidade">
+                  <ion-label stacked class="snow bold">Cidade</ion-label>
+                  <ion-input type="text" class="snow"></ion-input>
+                </ion-item>
+                <ion-item class="bg-transparent  no-margin UF">
+                  <ion-label stacked class="snow bold">UF</ion-label>
+                  <ion-input type="text" class="snow"></ion-input>
+                </ion-item>
+              </div>
+              <ion-item class="bg-transparent no-margin snow light no margin-top-5">
+                <ion-label>Receber por e-mail as ofertas e novidades</ion-label>
+                <ion-radio value="0"></ion-radio>
+              </ion-item>
+              <ion-item class="bg-transparent no-margin snow light no-margin padding-top-5">
+                <ion-label>Concordo com a Politica de Privacidade</ion-label>
+                <ion-radio value="1"></ion-radio>
+              </ion-item>
+            </div>
+          </div>
+          <!-- botões -->
+          <div class="ctaLogin center padding-top-25 bold" (click)="criarNovaConta()">
+            CADASTRAR
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </ion-content>
