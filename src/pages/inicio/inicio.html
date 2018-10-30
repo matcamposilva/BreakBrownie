@@ -25,11 +25,10 @@
        <p class="letratempo1">Segunda à sexta</p>
        <p class="letratempo">08:30 ás 12:00 Horas</p>
        <p class="letratempo">13:30 ás 18:30 Horas</p>
-       <p class="letratempo">13:30 ás 18:30 Horas</p>
       </div>
     
       <div class = "align-entrega">
-          <h2 class=" letraHorarios "> Horário de<br> Entrega: </h2>
+          <h2 class=" letraHorarios"> Horário de<br> Entrega: </h2>
           <p class="letratempo1">Segunda à sexta</p>
           <p class="letratempo">10:00 ás 12:00 Horas</p>
           <p class="letratempo">12:30 ás 17:00 Horas</p>
@@ -51,10 +50,37 @@
       <div class="swiper-button-next swiper-button-white" (click)="slideNext()"></div>
       <div class="swiper-button-prev swiper-button-white" (click)="slidePrev()"></div>
     
-      <button ion-button class="botaomaisPedidos" class="color-menuSlides">MAIS PEDIDOS</button>
-      <button ion-button class="botaolinhaProdutos" class="color-menuSlides">LINHAS DE PROUTOS</button>
-      <button ion-button class="botaoEncomendas" class="color-menuSlides">ENCOMENDAS</button>
-    </div>
-    
+        <ion-segment [(ngModel)]="pet" class="mg-top-5">
+          <ion-segment-button value="kittens" class="bold">
+           Mais Pedidos
+          </ion-segment-button>
+          <ion-segment-button value="puppies">
+            Linha de Produtos
+          </ion-segment-button>
+        </ion-segment>
+
+<div class="mg-top-5">
+    <ion-card>
+        <ion-card-content>
+          <h2>Brownie com cerveja Stout.</h2> 
+          <p>A cerveja Stout harmoniza perfeitamente com uma sobremesa à base de chocolate. E agora melhor ainda, 
+             a Break Brownie incorporou numa versão de brownie da linha Break Bar!</p>
+          <p>A Stout possui coloração escura e forte aroma de café e chocolate. Produzida com malte torrado, tem a espuma bastante cremosa, corpo intenso e elevado amargor.</p>
+        </ion-card-content>
+      </ion-card>
+</div>
+
+<div class="mg-top-5">
+    <ion-card>
+        <ion-card-content>
+          <h2>Brownie com cerveja Stout.</h2> 
+          <p>A cerveja Stout harmoniza perfeitamente com uma sobremesa à base de chocolate. E agora melhor ainda, 
+             a Break Brownie incorporou numa versão de brownie da linha Break Bar!</p>
+          <p>A Stout possui coloração escura e forte aroma de café e chocolate. Produzida com malte torrado, tem a espuma bastante cremosa, corpo intenso e elevado amargor.</p>
+        </ion-card-content>
+      </ion-card>
+</div>
+
+      </div>
     </ion-content>
   

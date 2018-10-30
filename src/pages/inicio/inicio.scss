@@ -13,8 +13,8 @@ page-inicio {
   }
 
   .align-entrega {
-    padding-left: 170px;
-    margin-top: -79px;
+    padding-left: 185px;
+    margin-top: -80px;
   }
 
   .letraHorarios {
@@ -29,6 +29,9 @@ page-inicio {
 
   }
 
+  .corMais{
+    color: #9e2525;
+  }
   .letratempo1 {
     font-size: 10px;
     font-weight: 250px;
@@ -49,6 +52,16 @@ page-inicio {
   }
 
 
+  //div do menu mais pedidos
+  ion-content{
+    background: #f19125 !important;
+}
+ion-card{
+  background: #f2aa49 !important;
+}
+ion-item{
+background: #f2aa49 !important;
+}
 
 
 

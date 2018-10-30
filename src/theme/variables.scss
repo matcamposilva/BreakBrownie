@@ -54,6 +54,18 @@ $toolbar-md-button-color: color($colors, laranja);
 $background-color:  color($colors, snow);
 
 
+// cor da borda da Mais Pedidos e Linha de produtos na pag INICIO
+$segment-button-md-border-bottom-color : color($colors, laranjaClaro);	
+// cor do texto selecionado Mais Pedidos e Linha de produtos na pag INICIO
+$segment-button-md-border-color-activated: color($colors, snow);
+
+$toolbar-md-active-color: color($colors, snow);
+
+// cor do texto selecionado Mais Pedidos e Linha de produtos na pag INICIO
+$segment-button-ios-text-color	: color($colors, laranjaClaro);
+
+$segment-button-ios-background-color-activated: color($colors, snow);	
+
 @import "ionic.theme.default";
 @import "ionic.ionicons";
 @import "roboto";
