@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { InicioPage } from '../inicio/inicio';
-import { CardapioPage } from '../cardapio/cardapio';
 import { EncomendasPage } from '../encomendas/encomendas';
 import { MinhaContaPage } from '../minha-conta/minha-conta';
 import { CarrinhoCompraPage } from '../carrinho-compra/carrinho-compra';
@@ -9,6 +8,7 @@ import { HistPedidoPage } from '../hist-pedido/hist-pedido';
 import { SobrePage } from '../sobre/sobre';
 import { ContatosPage } from '../contatos/contatos';
 import { RedeSocialPage } from '../rede-social/rede-social';
+import { CardapioPageModule } from '../cardapio/cardapio.module';
 
 /**
  * Generated class for the MenuMaisPage page.
@@ -34,7 +34,7 @@ export class MenuMaisPage {
   }
 
   abrirCardapio(){
-    this.navCtrl.push(CardapioPage);
+    this.navCtrl.push(CardapioPageModule);
   }
 
   abrirEncomendas(){
