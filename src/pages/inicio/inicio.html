@@ -1,86 +1,87 @@
 <ion-header class="tamanho-menu">
-    <meta name="viewport" content="width=device-width">
-    <!--deixar respositivo -->
+  <meta name="viewport" content="width=device-width">
+  <!--deixar respositivo -->
   <ion-toolbar>
-        <button ion-button icon-only menuToggle>
-            <ion-icon name="menu"></ion-icon>
-          </button>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
 
-        <ion-title>  <p class = "corPrincipal">Break Brownie </p> </ion-title>
-        <ion-buttons end>
-          <button ion-button icon-only color="royal">
-            <ion-icon name="md-cart"></ion-icon>
-          </button>
-        </ion-buttons>
-      </ion-toolbar>
+    <ion-title>
+      <p class="corPrincipal">Break Brownie </p>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal">
+        <ion-icon name="md-cart"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
-    
-    <ion-content padding class="bg-login snow">
-    
-        
-        <img src="./assets/imgs/relogio.png" class="img-relogio"/>
-      
-        <div class="aling-horarios">
-       <h2 class="letraHorarios snow"> Horário de<br> Funcionamento: </h2>
-       <p class="letratempo1">Segunda à sexta</p>
-       <p class="letratempo">08:30 ás 12:00 Horas</p>
-       <p class="letratempo">13:30 ás 18:30 Horas</p>
-      </div>
-    
-      <div class = "align-entrega">
-          <h2 class=" letraHorarios"> Horário de<br> Entrega: </h2>
-          <p class="letratempo1">Segunda à sexta</p>
-          <p class="letratempo">10:00 ás 12:00 Horas</p>
-          <p class="letratempo">12:30 ás 17:00 Horas</p>
-      </div>
-    
-      <div class="slidePromocoes">
-      <ion-slides paginationClickable=true initialSlide=0 loop=true autoplay=1000 speed=6000 #mySlider>
-        <ion-slide *ngFor="let item of elenco">
-          <ion-item class="botaoSuperiorSlide bold snow">
-            {{item.TagProduto}}
-          </ion-item>
-          <img src="{{item.img}}">
-          <ion-item class="botaoInferiorSlide snow">
-            {{item.valor}} | {{item.nomeProduto}} | {{item.gramas}}
-          </ion-item>
-        </ion-slide>
-      </ion-slides>
-    
-      <div class="swiper-button-next swiper-button-white" (click)="slideNext()"></div>
-      <div class="swiper-button-prev swiper-button-white" (click)="slidePrev()"></div>
-    
-        <ion-segment [(ngModel)]="pet" class="mg-top-5">
-          <ion-segment-button value="kittens" class="bold">
-           Mais Pedidos
-          </ion-segment-button>
-          <ion-segment-button value="puppies">
-            Linha de Produtos
-          </ion-segment-button>
-        </ion-segment>
 
-<div class="mg-top-5">
-    <ion-card>
+<ion-content padding class="bg-login snow">
+
+  <img src="./assets/imgs/relogio.png" class="img-relogio" />
+
+  <div class="aling-horarios">
+    <h2 class="letraHorarios snow"> Horário de<br> Funcionamento: </h2>
+    <p class="letratempo1">Segunda à sexta</p>
+    <p class="letratempo">08:30 ás 12:00 Horas</p>
+    <p class="letratempo">13:30 ás 18:30 Horas</p>
+  </div>
+
+  <div class="align-entrega">
+    <h2 class=" letraHorarios"> Horário de<br> Entrega: </h2>
+    <p class="letratempo1">Segunda à sexta</p>
+    <p class="letratempo">10:00 ás 12:00 Horas</p>
+    <p class="letratempo">12:30 ás 17:00 Horas</p>
+  </div>
+
+  <div class="slidePromocoes">
+    <ion-slides paginationClickable=true initialSlide=0 loop=true autoplay=1000 speed=6000 #mySlider>
+      <ion-slide *ngFor="let item of elenco">
+        <ion-item class="botaoSuperiorSlide bold snow">
+          {{item.TagProduto}}
+        </ion-item>
+        <img src="{{item.img}}">
+        <ion-item class="botaoInferiorSlide snow">
+          {{item.valor}} | {{item.nomeProduto}} | {{item.gramas}}
+        </ion-item>
+      </ion-slide>
+    </ion-slides>
+
+    <div class="swiper-button-next swiper-button-white" (click)="slideNext()"></div>
+    <div class="swiper-button-prev swiper-button-white" (click)="slidePrev()"></div>
+
+    <ion-segment [(ngModel)]="pet" class="mg-top-5">
+      <ion-segment-button value="kittens" class="bold">
+        Mais Pedidos
+      </ion-segment-button>
+      <ion-segment-button value="puppies">
+        Linha de Produtos
+      </ion-segment-button>
+    </ion-segment>
+    <div class="mg-top-5">
+      <ion-card>
         <ion-card-content>
-          <h2>Brownie com cerveja Stout.</h2> 
-          <p>A cerveja Stout harmoniza perfeitamente com uma sobremesa à base de chocolate. E agora melhor ainda, 
-             a Break Brownie incorporou numa versão de brownie da linha Break Bar!</p>
-          <p>A Stout possui coloração escura e forte aroma de café e chocolate. Produzida com malte torrado, tem a espuma bastante cremosa, corpo intenso e elevado amargor.</p>
+          <h2>Brownie com cerveja Stout.</h2>
+          <p>A cerveja Stout harmoniza perfeitamente com uma sobremesa à base de chocolate. E agora melhor ainda,
+            a Break Brownie incorporou numa versão de brownie da linha Break Bar!</p>
+          <p>A Stout possui coloração escura e forte aroma de café e chocolate. Produzida com malte torrado, tem a
+            espuma bastante cremosa, corpo intenso e elevado amargor.</p>
         </ion-card-content>
       </ion-card>
-</div>
+    </div>
 
-<div class="mg-top-5">
-    <ion-card>
+    <div class="mg-top-5">
+      <ion-card>
         <ion-card-content>
-          <h2>Brownie com cerveja Stout.</h2> 
-          <p>A cerveja Stout harmoniza perfeitamente com uma sobremesa à base de chocolate. E agora melhor ainda, 
-             a Break Brownie incorporou numa versão de brownie da linha Break Bar!</p>
-          <p>A Stout possui coloração escura e forte aroma de café e chocolate. Produzida com malte torrado, tem a espuma bastante cremosa, corpo intenso e elevado amargor.</p>
+          <h2>Brownie com cerveja Stout.</h2>
+          <p>A cerveja Stout harmoniza perfeitamente com uma sobremesa à base de chocolate. E agora melhor ainda,
+            a Break Brownie incorporou numa versão de brownie da linha Break Bar!</p>
+          <p>A Stout possui coloração escura e forte aroma de café e chocolate. Produzida com malte torrado, tem a
+            espuma bastante cremosa, corpo intenso e elevado amargor.</p>
         </ion-card-content>
       </ion-card>
-</div>
+    </div>
 
-      </div>
-    </ion-content>
-  
+  </div>
+</ion-content>

@@ -43,12 +43,27 @@ page-inicio {
     margin-top: 10px;
   }
 
-  .botaoSuperiorSlide,
+  
+  .botaoSuperiorSlide, {
+    background-color: #F5AB3D;
+    font-size: 15px;
+    font-weight: 50px;
+    text-align: center;
+  }
+
+ 
   .botaoInferiorSlide {
     background-color: #F5AB3D;
     font-size: 15px;
     font-weight: 50px;
     text-align: center;
+    margin-top: -5px;
+    
+  }
+
+
+  .swiper-button-next,.swiper-button-prev{
+    margin-top: -105px;
   }
 
 
